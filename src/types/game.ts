@@ -75,3 +75,10 @@ export interface WeatherEffect {
   awayChance?: number
   sickChance?: number
 }
+
+export interface UpdateContext {
+  deltaMs: number
+  now: number
+  weather: Weather
+  weatherEffect: WeatherEffect
+}
